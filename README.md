@@ -14,15 +14,12 @@ By Greg van Lunteren || Last updated: 2019-11-04
     a. Make sure to select "Create a git repository" and "Use Packrat with this project"
 
 2. Next run these commands to pull down the standard R project skeleton:
-```{r skeleton, eval=FALSE}
-install.packages('usethis')
-usethis::use_course('placeholder.zip',destdir = getwd())
-```
+` install.packages('usethis') `
+` usethis::use_course('placeholder.zip',destdir = getwd()) `
 
 3. Quick load in packages, run the following code and follow the prompts (based on what type of analysis you're doing):
-```{r setup, eval=FALSE}
-source("~/setup/packages.R")
-```
+`source("~/setup/packages.R")`
+
 
 
 
