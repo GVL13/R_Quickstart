@@ -1,5 +1,6 @@
 # R_Quickstart
-A quick and organized way to get R analyses up and running
+A quick way to get organized, reproducible R analyses up and running.
+
 By Greg van Lunteren || Last updated: 2019-11-04
 
 ### Prerequisites:
@@ -17,7 +18,7 @@ By Greg van Lunteren || Last updated: 2019-11-04
 
 ` install.packages('usethis') `
 
-` usethis::use_course('placeholder.zip',destdir = getwd()) `
+` usethis::use_course('https://github.com/GVL13/R_Quickstart/blob/master/R_SKELETON.zip',destdir = getwd()) `
 
 
 3. Quick load in packages, run the following code and follow the prompts (based on what type of analysis you're doing):
