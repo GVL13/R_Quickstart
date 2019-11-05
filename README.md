@@ -1,6 +1,4 @@
----
-title: R Quickstart Instructions
----
+# R Quickstart Instructions
 
 By Greg van Lunteren || Last updated: 2019-11-05
 
