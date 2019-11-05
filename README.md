@@ -1,7 +1,8 @@
-# R_Quickstart
-A quick way to get organized, reproducible R analyses up and running.
+---
+title: R Quickstart Instructions
+---
 
-By Greg van Lunteren || Last updated: 2019-11-04
+By Greg van Lunteren || Last updated: 2019-11-05
 
 ### Prerequisites:
 - R
@@ -12,26 +13,21 @@ By Greg van Lunteren || Last updated: 2019-11-04
 ### Setup:
 1. First create an RStudio project using File -> New Project -> New Directory -> New Project. Using the Project format is extremely helpful for keeping any analysis organized, verison controlled, and reproducible.
     a. Name it and put it wherever you want locally
-    a. Make sure to select "Create a git repository" and "Use Packrat with this project"
+    a. Make sure to select _"Create a git repository"_ and _"Use Packrat with this project"_
 
-2. Next run these commands to pull down the standard R project skeleton:
+2. Next run these commands to pull down the standard R project skeleton and load common packages. Follow the prompts based on what type of analysis you're doing:
 
-` install.packages('usethis') `
+` require(RCurl) || install.packages("RCurl") `
 
-` usethis::use_course('https://github.com/GVL13/R_Quickstart/blob/master/R_SKELETON.zip',destdir = getwd()) `
+` setupscript <- getURL("https://raw.githubusercontent.com/GVL13/R_Quickstart/master/setupscript.R") `
 
-
-3. Quick load in packages, run the following code and follow the prompts (based on what type of analysis you're doing):
-
-`source("~/setup/packages.R")`
-
-
+` eval(parse(text = script)) `
 
 
 ### Directory Scheme:
 - __code__ -- All R code should go in the 'code' folder
 - __data__ -- Any source data should live in the 'data' folder (.csv, .xlsx, shapefiles, SQLite DBs, etc)
-- __output__ --Output data and visualizations (ie: images, pdfs, word docs) should live in the 'output' folder
+- __output__ --Output data and visualizations (ie: images, pdfs, word docs) should live in the 'output' folder. Somebody looking for the results of your analysis should be able to easily find what they're looking for here.
 - __documentation__ -- Data dictionaries, request emails, to-do lists, and other documentation should go in the 'documentation' folder
 
 
