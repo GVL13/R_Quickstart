@@ -19,7 +19,7 @@ By Greg van Lunteren || Last updated: 2019-11-05
 
 ` setupscript <- RCurl::getURL("https://raw.githubusercontent.com/GVL13/R_Quickstart/master/setupscript.R") `
 
-` eval(parse(text = script)) `
+` eval(parse(text = setupscript)) `
 
 
 ### Directory Scheme:
