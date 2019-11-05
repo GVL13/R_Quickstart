@@ -15,9 +15,9 @@ By Greg van Lunteren || Last updated: 2019-11-05
 
 2. Next run these commands to pull down the standard R project skeleton and load common packages. Follow the prompts based on what type of analysis you're doing:
 
-` require(RCurl) || install.packages("RCurl") `
+` install.packages("RCurl") `
 
-` setupscript <- getURL("https://raw.githubusercontent.com/GVL13/R_Quickstart/master/setupscript.R") `
+` setupscript <- RCurl::getURL("https://raw.githubusercontent.com/GVL13/R_Quickstart/master/setupscript.R") `
 
 ` eval(parse(text = script)) `
 
