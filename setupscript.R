@@ -1,7 +1,7 @@
 # Creating folder structure
-folderlist <- c("code","data","documentation","output","setup")
+folderlist <- c('code','data','documentation','output','setup')
 
-for(i in folderlist) {dir.create(path = sprintf("%s/%s",getwd(),i))}
+for(i in folderlist) {dir.create(path = sprintf('%s/%s',getwd(),i))}
 
 print("Folder directory created.")
 
