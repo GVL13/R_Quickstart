@@ -1,4 +1,3 @@
-# Creating folder structure
 folderlist <- c('code','data','documentation','output','setup') 
 
 for(i in folderlist) {dir.create(path = sprintf('%s/%s',getwd(),i))}
