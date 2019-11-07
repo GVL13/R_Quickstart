@@ -17,10 +17,12 @@ By Greg van Lunteren || Last updated: 2019-11-05
 
 ` install.packages("devtools") `
 
-` directorysetup <- devtools::source_url("https://raw.githubusercontent.com/GVL13/R_Quickstart/master/RSkel_dirsetup.R") `
-` eval(parse(text = directorysetup)) `
+` dirsetup <- devtools::source_url("https://raw.githubusercontent.com/GVL13/R_Quickstart/master/RSkel_dirsetup.R") `
+
+` eval(parse(text = dirsetup)) `
 
 ` packload <- devtools::source_url("https://raw.githubusercontent.com/GVL13/R_Quickstart/master/RSkel_packageload.R") `
+
 ` eval(parse(text = packload)) `
 
 
