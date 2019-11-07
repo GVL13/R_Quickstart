@@ -1,5 +1,5 @@
 install.packages("pacman")
-require(pacman)
+library(pacman)
 
 # Inspired by http://drivendata.github.io/cookiecutter-data-science/#getting-started
 
@@ -41,7 +41,7 @@ PACKAGES <- function(General = FALSE,DB = FALSE, WebScrape = FALSE,ML=FALSE,SPAT
     p_load(tidymodels,
            parsnip,
            rsample,
-           remote,
+           remotes,
            prodlim)
     print("Select 1 to update everything") # include "remote" package above
     require(tune) || remotes::install_github("tidymodels/tune") # Is sometimes broken
