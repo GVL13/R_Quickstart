@@ -15,11 +15,13 @@ By Greg van Lunteren || Last updated: 2019-11-05
 
 2. Next run these commands to pull down the standard R project skeleton and load common packages. Follow the prompts based on what type of analysis you're doing:
 
-` install.packages("RCurl") `
+` install.packages("devtools") `
 
-` setupscript <- RCurl::getURL("https://raw.githubusercontent.com/GVL13/R_Quickstart/master/setupscript.R") `
+` directorysetup <- devtools::source_url("https://raw.githubusercontent.com/GVL13/R_Quickstart/master/RSkel_dirsetup.R") `
+` eval(parse(text = directorysetup)) `
 
-` eval(parse(text = setupscript)) `
+` packload <- devtools::source_url("https://raw.githubusercontent.com/GVL13/R_Quickstart/master/RSkel_packageload.R") `
+` eval(parse(text = packload)) `
 
 
 ### Directory Scheme:
